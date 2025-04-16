@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo Principal -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo" />
+
+        <!-- Mensaje de bienvenida -->
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido Juan Torres!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gracias por registrarte en la app."
+            android:textSize="18sp"
+            android:textColor="@color/gris"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Sección: Plataforma -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plataforma utilizada"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/platformGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+
+            <RadioButton
+                android:id="@+id/radioIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iOS"
+                android:layout_marginStart="24dp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/platformLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            android:contentDescription="Logo plataforma" />
+
+        <!-- Sección: Preferencias -->
+        <LinearLayout
+            android:id="@+id/preferencesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferencias:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkProgramacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programación" />
+
+            <CheckBox
+                android:id="@+id/checkRedes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redes" />
+
+            <CheckBox
+                android:id="@+id/checkSeguridad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seguridad" />
+
+            <CheckBox
+                android:id="@+id/checkHardware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hardware" />
+
+            <CheckBox
+                android:id="@+id/checkOtra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otra" />
+
+            <EditText
+                android:id="@+id/inputOtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especificá tu preferencia"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <!-- Botón continuar -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:text="Continuar" />
+    </LinearLayout>
+</ScrollView>

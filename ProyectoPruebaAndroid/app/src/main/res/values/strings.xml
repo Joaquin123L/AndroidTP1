@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProyectoPruebaAndroid</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registro_link">¿No tenés cuenta? Registrate</string>
+</resources>
